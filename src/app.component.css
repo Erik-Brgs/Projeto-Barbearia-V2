@@ -1,0 +1,92 @@
+/* Estilos específicos do componente, se necessário */ 
+
+/* Estilos para os links de contato */
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.contact-item a:hover {
+  color: #c4a47c;
+  transform: translateY(-2px);
+  background-color: rgba(196, 164, 124, 0.1);
+}
+
+.contact-item a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #c4a47c;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.contact-item a:hover::after {
+  width: 80%;
+}
+
+/* Estilo especial para o WhatsApp */
+.contact-item .fab.fa-whatsapp {
+  color: #25D366;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-item a:hover .fab.fa-whatsapp {
+  transform: scale(1.2);
+}
+
+/* Estilo especial para o Instagram */
+.contact-item .fab.fa-instagram {
+  color: #E4405F;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-item a:hover .fab.fa-instagram {
+  transform: scale(1.2) rotate(15deg);
+}
+
+/* Estilo para o ícone de telefone */
+.contact-item .fas.fa-phone {
+  color: #333;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-item a:hover .fas.fa-phone {
+  transform: rotate(15deg);
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .contact-item a {
+    font-size: 1.1em;
+    padding: 8px 15px;
+  }
+  
+  .contact-item i {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+    text-align: center;
+  }
+  
+  .contact-item a {
+    display: block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    background-color: rgba(196, 164, 124, 0.05);
+  }
+} 

@@ -1,13 +1,5 @@
-import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrls: ['./global_styles.css']
-})
-export class App {
-}
-
-bootstrapApplication(App);
+bootstrapApplication(AppComponent)
+  .catch(err => console.error(err));
