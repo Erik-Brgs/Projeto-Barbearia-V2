@@ -41,7 +41,6 @@ body {
 
 .header-top {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-container {
@@ -87,7 +86,7 @@ body {
 
 /* Menu Toggle Button */
 .menu-toggle {
-  display: none;
+  display: block;
   background: none;
   border: none;
   color: var(--color-white);
@@ -103,32 +102,49 @@ body {
 
 /* Navigation Content */
 .nav-content {
+  position: fixed;
+  top: 71px;
+  right: -100%;
+  width: 300px;
+  height: calc(100vh - 71px);
   background-color: var(--color-primary);
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content.active {
+  right: 0;
 }
 
 .nav-menu-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .nav-menu {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-menu a {
   color: var(--color-white);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: block;
+  padding: 1rem;
 }
 
 .nav-menu a:hover {
@@ -139,10 +155,12 @@ body {
   background-color: var(--color-accent);
   color: var(--color-primary);
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem;
   border-radius: 4px;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
 }
 
 .btn-agendar:hover {
@@ -153,10 +171,6 @@ body {
 
 /* Media Queries para Header e Navigation */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
   .social-links-header {
     display: none;
   }
@@ -164,48 +178,11 @@ body {
   .logo-img {
     height: 40px;
   }
+}
 
+@media (min-width: 769px) {
   .nav-content {
-    position: fixed;
-    top: 71px;
-    right: -100%;
-    width: 100%;
-    height: calc(100vh - 71px);
-    background-color: var(--color-primary);
-    transition: right 0.3s ease-in-out;
-    overflow-y: auto;
-  }
-
-  .nav-content.active {
-    right: 0;
-  }
-
-  .nav-menu-container {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-
-  .nav-menu li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-menu a {
-    display: block;
-    padding: 1rem;
-    font-size: 1.1rem;
-  }
-
-  .btn-agendar {
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
+    width: 300px;
   }
 }
 
