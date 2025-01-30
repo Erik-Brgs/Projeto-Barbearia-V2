@@ -6,271 +6,260 @@
     <title>Barbearia O Búlgaro - Estilo e Tradição em Curitiba</title>
     <meta name="description" content="Barbearia premium em Curitiba, oferecendo cortes clássicos, barba e tratamentos especiais com excelência desde 2015.">
     
-    <!-- Google Fonts -->
+    <!-- Fonts e Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
-    <!-- CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
-    <!-- Conteúdo do app.component.html -->
-    <!-- Header -->
-<header class="main-header">
-  <div class="header-top">
-    <div class="nav-container">
-      <div class="logo">
-        <img src="src/assets/images/logo.png" alt="Logo Barbearia O Búlgaro" class="logo-img">
-      </div>
-      <div class="header-right">
-        <div class="social-links-header">
-          <a href="https://www.instagram.com/barbeariaobulgaro/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="src/assets/images/logo.png" alt="Logo Barbearia O Búlgaro" class="logo-img">
+                </div>
+                <div class="header-right">
+                    <div class="social-links-header">
+                        <a href="https://www.instagram.com/barbeariaobulgaro/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <button class="menu-toggle" aria-label="Abrir Menu">
-          <span>Menu</span>
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  
-  <div class="nav-content">
-    <nav class="main-nav">
-      <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." target="_blank" class="btn-agendar">Agendar Horário</a>
-    </nav>
-  </div>
-</header>
+        
+        <nav class="nav-content" aria-label="Menu principal">
+            <div class="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." 
+                   target="_blank" 
+                   class="btn-agendar"
+                   rel="noopener noreferrer">
+                    Agendar Horário
+                </a>
+            </div>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
-  <div class="hero-content">
-    <h2>Estilo e Tradição em Cada Detalhe</h2>
-    <p>Sua experiência única de barbearia premium em Curitiba</p>
-    <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." target="_blank" class="btn-hero">Agende seu Horário</a>
-  </div>
-</section>
+    <main>
+        <section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-content">
+                <h1>Estilo e Tradição em Cada Detalhe</h1>
+                <p>Sua experiência única de barbearia premium em Curitiba</p>
+                <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." 
+                   target="_blank" 
+                   class="btn-hero"
+                   rel="noopener noreferrer">
+                    Agende seu Horário
+                </a>
+            </div>
+        </section>
 
-<!-- Serviços -->
-<section id="servicos" class="services">
-  <div class="section-header">
-    <h2>Nossos Serviços</h2>
-    <p>Excelência em cada atendimento</p>
-  </div>
-  
-  <div class="services-grid">
-    <!-- Cortes -->
-    <div class="service-card">
-      <div class="service-content">
-        <i class="fas fa-cut"></i>
-        <h3>Cortes Clássicos</h3>
-        <p>Cortes tradicionais e modernos executados com precisão</p>
-        <span class="price">A partir de R$ 45,00</span>
-      </div>
-      <button class="btn-service">Saiba Mais</button>
-    </div>
+        <!-- Serviços -->
+        <section id="servicos" class="services">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Excelência em cada atendimento</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Cortes -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-cut"></i>
+                        <h3>Cortes Clássicos</h3>
+                        <p>Cortes tradicionais e modernos executados com precisão</p>
+                        <span class="price">A partir de R$ 45,00</span>
+                    </div>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
 
-    <!-- Barba -->
-    <div class="service-card">
-      <div class="service-content">
-        <i class="fas fa-user-secret"></i>
-        <h3>Barba</h3>
-        <p>Modelagem e tratamento completo para sua barba</p>
-        <span class="price">A partir de R$ 35,00</span>
-      </div>
-      <button class="btn-service">Saiba Mais</button>
-    </div>
+                <!-- Barba -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>Barba</h3>
+                        <p>Modelagem e tratamento completo para sua barba</p>
+                        <span class="price">A partir de R$ 35,00</span>
+                    </div>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
 
-    <!-- Combo -->
-    <div class="service-card featured">
-      <div class="service-content">
-        <i class="fas fa-star"></i>
-        <h3>Combo Completo</h3>
-        <p>Corte + Barba com tratamento premium</p>
-        <span class="price">R$ 75,00</span>
-      </div>
-      <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário para o Combo Completo (Corte + Barba)." target="_blank" class="btn-service">Agendar</a>
-    </div>
+                <!-- Combo -->
+                <div class="service-card featured">
+                    <div class="service-content">
+                        <i class="fas fa-star"></i>
+                        <h3>Combo Completo</h3>
+                        <p>Corte + Barba com tratamento premium</p>
+                        <span class="price">R$ 75,00</span>
+                    </div>
+                    <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário para o Combo Completo (Corte + Barba)." target="_blank" class="btn-service">Agendar</a>
+                </div>
 
-    <!-- Tratamentos -->
-    <div class="service-card">
-      <div class="service-content">
-        <i class="fas fa-spa"></i>
-        <h3>Tratamentos</h3>
-        <p>Hidratação e cuidados especiais</p>
-        <span class="price">A partir de R$ 50,00</span>
-      </div>
-      <button class="btn-service">Saiba Mais</button>
-    </div>
-  </div>
-</section>
+                <!-- Tratamentos -->
+                <div class="service-card">
+                    <div class="service-content">
+                        <i class="fas fa-spa"></i>
+                        <h3>Tratamentos</h3>
+                        <p>Hidratação e cuidados especiais</p>
+                        <span class="price">A partir de R$ 50,00</span>
+                    </div>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
+            </div>
+        </section>
 
-<!-- Sobre Nós -->
-<section id="sobre" class="about">
-  <div class="about-content">
-    <div class="about-text">
-      <h2>Nossa História</h2>
-      <p>Desde 2015, a Barbearia O Búlgaro tem sido sinônimo de excelência em cuidados masculinos. Nossa equipe de profissionais altamente qualificados combina técnicas tradicionais com tendências modernas para oferecer o melhor em cortes e tratamentos.</p>
-      <p>Nosso ambiente foi cuidadosamente projetado para proporcionar uma experiência única, onde tradição encontra modernidade.</p>
-    </div>
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nossa Barbearia" class="about-img">
-    </div>
-  </div>
-</section>
+        <!-- Sobre Nós -->
+        <section id="sobre" class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nossa História</h2>
+                    <p>Desde 2015, a Barbearia O Búlgaro tem sido sinônimo de excelência em cuidados masculinos. Nossa equipe de profissionais altamente qualificados combina técnicas tradicionais com tendências modernas para oferecer o melhor em cortes e tratamentos.</p>
+                    <p>Nosso ambiente foi cuidadosamente projetado para proporcionar uma experiência única, onde tradição encontra modernidade.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nossa Barbearia" class="about-img">
+                </div>
+            </div>
+        </section>
 
-<!-- Galeria -->
-<section id="galeria" class="gallery">
-  <h2>Galeria de Cortes</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_1.png')"></div>
-    <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_2.png')"></div>
-    <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_3.png')"></div>
-    <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_4.png')"></div>
-    <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_5.png')"></div>
-    <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_6.png')"></div>
-  </div>
-</section>
+        <!-- Galeria -->
+        <section id="galeria" class="gallery">
+            <h2>Galeria de Cortes</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_1.png')"></div>
+                <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_2.png')"></div>
+                <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_3.png')"></div>
+                <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_4.png')"></div>
+                <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_5.png')"></div>
+                <div class="gallery-item" style="background-image: url('src/assets/cortes/corte_6.png')"></div>
+            </div>
+        </section>
 
-<!-- Depoimentos -->
-<section class="testimonials">
-  <h2>O que dizem nossos clientes</h2>
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <div class="client-image" style="background-image: url('https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80')"></div>
-      <p>"Melhor barbearia de Curitiba! Atendimento excepcional e resultado impecável."</p>
-      <h4>João Silva</h4>
-      <span class="rating">★★★★★</span>
-    </div>
-    <div class="testimonial-card">
-      <div class="client-image" style="background-image: url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80')"></div>
-      <p>"Ambiente incrível e profissionais muito capacitados. Sempre saio satisfeito!"</p>
-      <h4>Pedro Santos</h4>
-      <span class="rating">★★★★★</span>
-    </div>
-  </div>
-</section>
+        <!-- Depoimentos -->
+        <section class="testimonials">
+            <h2>O que dizem nossos clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="client-image" style="background-image: url('https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80')"></div>
+                    <p>"Melhor barbearia de Curitiba! Atendimento excepcional e resultado impecável."</p>
+                    <h4>João Silva</h4>
+                    <span class="rating">★★★★★</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="client-image" style="background-image: url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80')"></div>
+                    <p>"Ambiente incrível e profissionais muito capacitados. Sempre saio satisfeito!"</p>
+                    <h4>Pedro Santos</h4>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+        </section>
 
-<!-- Contato e Localização -->
-<section id="contato" class="contact">
-  <div class="contact-grid">
-    <div class="contact-info">
-      <h2>Informações de Contato</h2>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>R. Eng. Francisco Xavier Driesel, 50 - Cachoeira, Curitiba - PR</p>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <a href="tel:+5541999278895">(41) 99927-8895</a>
-      </div>
-      <div class="contact-item">
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/5541999278895" target="_blank">(41) 99927-8895</a>
-      </div>
-      <div class="contact-item">
-        <i class="fab fa-instagram"></i>
-        <a href="https://www.instagram.com/barbeariaobulgaro/" target="_blank">barbeariaobulgaro</a>
-      </div>
-      <div class="contact-hours">
-        <h3>Horário de Funcionamento</h3>
-        <p>Segunda a Sábado: 9h às 20h</p>
-        <p>Domingo: Fechado</p>
-      </div>
-    </div>
-    
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0447243543997!2d-49.2721893!3d-25.3750789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce7c6b4c6bf3d%3A0x6c2a359892a9e5e9!2sR.%20Eng.%20Francisco%20Xavier%20Driesel%2C%2050%20-%20Cachoeira%2C%20Curitiba%20-%20PR%2C%2082710-370!5e0!3m2!1sen!2sbr!4v1647901234567!5m2!1sen!2sbr"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-      <a href="https://maps.app.goo.gl/w5GN7sDQG8WjQcwE9" target="_blank" class="map-button">
-        Abrir no Google Maps
-      </a>
-    </div>
-  </div>
-</section>
+        <!-- Contato e Localização -->
+        <section id="contato" class="contact">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>R. Eng. Francisco Xavier Driesel, 50 - Cachoeira, Curitiba - PR</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+5541999278895">(41) 99927-8895</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5541999278895" target="_blank">(41) 99927-8895</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/barbeariaobulgaro/" target="_blank">barbeariaobulgaro</a>
+                    </div>
+                    <div class="contact-hours">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sábado: 9h às 20h</p>
+                        <p>Domingo: Fechado</p>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0447243543997!2d-49.2721893!3d-25.3750789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce7c6b4c6bf3d%3A0x6c2a359892a9e5e9!2sR.%20Eng.%20Francisco%20Xavier%20Driesel%2C%2050%20-%20Cachoeira%2C%20Curitiba%20-%20PR%2C%2082710-370!5e0!3m2!1sen!2sbr!4v1647901234567!5m2!1sen!2sbr"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/w5GN7sDQG8WjQcwE9" target="_blank" class="map-button">
+                        Abrir no Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<!-- Footer -->
-<footer class="main-footer">
-  <div class="footer-content">
-    <div class="footer-logo">
-      <img src="src/assets/images/logo.png" alt="Logo Barbearia O Búlgaro" class="footer-logo-img">
-      <p>Estilo e Tradição em Cada Detalhe</p>
-    </div>
-    <div class="social-links">
-      <a href="https://www.instagram.com/barbeariaobulgaro/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2024 Barbearia O Búlgaro - Todos os direitos reservados</p>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="src/assets/images/logo.png" alt="Logo Barbearia O Búlgaro" class="footer-logo-img">
+                <p>Estilo e Tradição em Cada Detalhe</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/barbeariaobulgaro/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Barbearia O Búlgaro - Todos os direitos reservados</p>
+        </div>
+    </footer>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navContent = document.querySelector('.nav-content');
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    const header = document.querySelector('.main-header');
-    let lastScroll = 0;
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navContent = document.querySelector('.nav-content');
+            const navLinks = document.querySelectorAll('.nav-menu a');
 
-    // Toggle menu
-    menuToggle.addEventListener('click', function(e) {
-      e.stopPropagation();
-      navContent.classList.toggle('active');
-      menuToggle.setAttribute('aria-expanded', 
-        menuToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-      );
-    });
+            function closeMenu() {
+                navContent.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
 
-    // Fechar menu ao clicar em um link
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navContent.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                navContent.classList.toggle('active');
+            });
 
-    // Fechar menu ao clicar fora
-    document.addEventListener('click', function(event) {
-      const isClickInside = navContent.contains(event.target) || menuToggle.contains(event.target);
-      if (!isClickInside && navContent.classList.contains('active')) {
-        navContent.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
+            navLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
 
-    // Prevenir propagação de cliques dentro do menu
-    navContent.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
+            document.addEventListener('click', function(event) {
+                if (!navContent.contains(event.target) && !menuToggle.contains(event.target)) {
+                    closeMenu();
+                }
+            });
 
-    // Ajustar padding do body baseado na altura do header
-    function adjustBodyPadding() {
-      const headerHeight = header.offsetHeight;
-      document.body.style.paddingTop = `${headerHeight}px`;
-    }
-
-    // Chamar no carregamento e no resize
-    adjustBodyPadding();
-    window.addEventListener('resize', adjustBodyPadding);
-  });
-</script>
+            navContent.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
 </body>
 </html> 
