@@ -1,18 +1,63 @@
 <!-- Header -->
 <header class="main-header">
-  <nav class="nav-container">
-    <div class="logo">
-      <img src="./src/assets/images/logo.png" alt="Logo Barbearia O Búlgaro" class="logo-img">
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="header-logo">
+            <img src="src/assets/images/logo.png" alt="Logo Barbearia O Búlgaro" class="logo-img">
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="header-nav desktop-nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+            <a href="https://www.instagram.com/barbeariaobulgaro/" 
+               target="_blank" 
+               class="social-link"
+               aria-label="Siga-nos no Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." 
+               target="_blank" 
+               class="btn-agendar desktop-only"
+               rel="noopener noreferrer">
+                Agendar
+            </a>
+            <button class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </div>
-    <ul class="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#sobre">Sobre Nós</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-    <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." target="_blank" class="btn-agendar">Agendar Horário</a>
-  </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <nav class="mobile-nav-content">
+            <ul class="mobile-nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <a href="https://wa.me/5541999278895?text=Olá! Gostaria de agendar um horário." 
+                   target="_blank" 
+                   class="btn-agendar-mobile"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    Agendar Horário
+                </a>
+            </div>
+        </nav>
+    </div>
 </header>
 
 <!-- Hero Section -->
