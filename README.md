@@ -118,8 +118,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👨‍💻 Autor
 
-Desenvolvido por [Seu Nome]
+Desenvolvido por [Erik Borges Ribeiro]
 
 ---
-
-⌨️ com ❤️ por [Seu Nome] 😊
